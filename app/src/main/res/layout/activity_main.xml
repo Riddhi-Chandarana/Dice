@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.riddhi.dice.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/your"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your score:"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/imageView"
+            android:layout_marginTop="29dp" />
+
+        <TextView
+            android:id="@+id/computerscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/userscore"
+            android:layout_alignBottom="@+id/userscore"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/userscore"
+            android:text="Computer Score:"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="169dp"
+            tools:layout_editor_absoluteY="24dp" />
+
+        <TextView
+            android:id="@+id/userscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/your"
+            android:layout_alignBottom="@+id/your"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/your"
+            android:text="0"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="413dp"
+            tools:layout_editor_absoluteY="50dp" />
+
+        <TextView
+            android:id="@+id/computer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/computerscore"
+            android:layout_alignBottom="@+id/computerscore"
+            android:layout_toEndOf="@+id/computerscore"
+            android:text="0"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="330dp"
+            tools:layout_editor_absoluteY="24dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dice1"
+            tools:layout_editor_absoluteX="104dp"
+            tools:layout_editor_absoluteY="65dp"
+            android:layout_below="@+id/your"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="47dp" />
+
+        <Button
+            android:id="@+id/roll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROLL"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="231dp"
+            android:layout_alignBaseline="@+id/hold"
+            android:layout_alignBottom="@+id/hold"
+            android:layout_toStartOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/hold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="93dp"
+            android:text="HOLD"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="231dp"
+            android:layout_below="@+id/imageView"
+            android:layout_toEndOf="@+id/userscore" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/hold"
+            android:layout_alignBottom="@+id/hold"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="RESET"
+            tools:layout_editor_absoluteX="265dp"
+            tools:layout_editor_absoluteY="231dp" />
+
+        <TextView
+            android:id="@+id/printu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/computerscore"
+            android:layout_marginBottom="48dp"
+            android:text="TextView" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
